@@ -8,10 +8,10 @@ def find_set(node, sets):
 
 def kruskal(nodes, edges):
     mst = []
-    # each node starts in its own set
+    # at start we put each node in its own set
     components = [{node} for node in nodes]
 
-    # sort edges by weight
+    # we sort edges by weight
     sorted_edges = sorted(edges, key=lambda edge: edge[2])
 
     for edge in sorted_edges:
@@ -19,7 +19,7 @@ def kruskal(nodes, edges):
         set_u = find_set(u, components)
         set_v = find_set(v, components)
 
-        # if the two nodes are not already connected (no cycle)
+        # check if the two nodes are not already connected (no cycle)
         if set_u != set_v:
             components.remove(set_u)
             components.remove(set_v)
