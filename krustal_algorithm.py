@@ -50,5 +50,4 @@ def run_kruskal():
     for edge in mst:
         print(edge)
     print("Total weight: ", total_weight)
-
-run_kruskal()
+    
