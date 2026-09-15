@@ -152,6 +152,7 @@ depending on your Python installation.
 
 ## Sample Run Result
 
+```
 ################################################
 Prim's Algorithm MST:
 ################################################
@@ -179,6 +180,7 @@ Minimum Spanning Tree:
 ('E', 'F', 5)
 ('F', 'G', 6)
 Total weight:  32
+```
 
 The order of the selected edges is different depending on the algorithm. However, the total weight and the minimum spanning tree are the same.
 
