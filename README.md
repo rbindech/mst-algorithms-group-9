@@ -156,8 +156,14 @@ depending on your Python installation.
 ################################################
 Prim's Algorithm MST:
 ################################################
-///
-
+Minimum Spanning Tree:
+('A', 'G', 5)
+('A', 'C', 6)
+('B', 'C', 5)
+('F', 'G', 6)
+('E', 'F', 5)
+('D', 'E', 5)
+Total weight:  32
 ################################################
 Kruskal's Algorithm Result:
 ################################################
@@ -205,7 +211,7 @@ To simulate a node failure, the failed node and all edges connected to it are re
 
 - With Kruskal's algorithm, the failed node is excluded from the node list, and any edge connected to it is removed from the edge list before the sorting. If the remaining graph is still connected, the algorithm returns the new MST, if removing the node splits the remaining graph into disconnected parts (a cut vertex), the algorithm connects all possible vertices within each part and returns a single flat list of edges representing a minimum spanning forest.
 
-- With Prim algorithm, ###
+- With Prim algorithm, the failed node and its connected edges are removed, then the tree grows from an available node. If the graph becomes disconnected, Prim runs on each remaining component to return a single flat list of edges forming a Minimum Spanning Forest.
 
 - With Reverse Delete algorithm, it simply acts like if the failed node doesn't exist but it still gives the minimum spanning tree of this new graph network.
 
