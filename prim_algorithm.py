@@ -69,4 +69,3 @@ def run_prim():
 
     print("Total weight: ", total_weight)
 
-run_prim()
