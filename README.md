@@ -7,8 +7,8 @@ Group 9
 
 Group members:
 
-- ? - Prim's Algorithm
-- ? - Kruskal's Algorithm
+- Calixte Berthier - Prim's Algorithm
+- Emmanuel Santini - Kruskal's Algorithm
 - Rida Bindech - Reverse-Delete Algorithm
 
 ## Project Description
@@ -30,14 +30,21 @@ The project also includes a failure simulation, where a node or an edge cannot b
 The graph is represented using two main variables:
 
 ```python
-nodes = ["A", "B", "C", "D"]
+nodes = ["A", "B", "C", "D", "E", "F", "G"]
 
 edges = [
-    ("A", "B", 4),
-    ("A", "C", 2),
-    ("B", "C", 1),
-    ("B", "D", 5),
-    ("C", "D", 8),
+    ("A", "B", 7),
+    ("A", "C", 6),
+    ("A", "G", 5),
+    ("A", "F", 10),
+    ("B", "C", 5),
+    ("B", "D", 7),
+    ("B", "E", 9),
+    ("C", "E", 9),
+    ("C", "F", 7),
+    ("D", "E", 5),
+    ("E", "F", 5),
+    ("F", "G", 6),
 ]
 ```
 
