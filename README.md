@@ -158,10 +158,16 @@ Prim's Algorithm MST:
 ///
 
 ################################################
-Kruskal's Algorithm MST:
+Kruskal's Algorithm Result:
 ################################################
-///
-
+Minimum Spanning Tree:
+('A', 'G', 5)
+('B', 'C', 5)
+('D', 'E', 5)
+('E', 'F', 5)
+('A', 'C', 6)
+('F', 'G', 6)
+Total weight:  32
 ################################################
 Reverse-Delete Algorithm MST:
 ################################################
