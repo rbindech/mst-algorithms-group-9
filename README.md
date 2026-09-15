@@ -192,7 +192,7 @@ The homework also requires a simulation where a node or an edge fails and cannot
 
 To simulate an edge failure, the failed edge is removed from the graph before running the algorithms.
 
-With Krustal algorithm, ###
+With Kruskal's algorithm, the failed edge is simply removed from the edge list before sorting. If the graph is still connected, it still outputs the new MST. But if the removed edge was a cut edge, the graph is split into two disconnected parts. So the algorithm will exhausts all valid edges and returns a single list of edges containing the edges of both trees together (a minimum spanning forest).
 
 With Prim algorithm, ###
 
@@ -203,7 +203,7 @@ If enough edges are deleted to the point the graph is no more connected, it stil
 
 To simulate a node failure, the failed node and all edges connected to it are removed from the graph.
 
-With Krustal algorithm, ###
+With Kruskal's algorithm, the failed node is excluded from the node list, and any edge connected to it is removed from the edge list before the sorting. If the remaining graph is still connected, the algorithm returns the new MST, if removing the node splits the remaining graph into disconnected parts (a cut vertex), the algorithm connects all possible vertices within each part and returns a single flat list of edges representing a minimum spanning forest.
 
 With Prim algorithm, ###
 
