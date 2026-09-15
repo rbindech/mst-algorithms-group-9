@@ -200,7 +200,7 @@ To simulate an edge failure, the failed edge is removed from the graph before ru
 
 - With Kruskal's algorithm, the failed edge is simply removed from the edge list before sorting. If the graph is still connected, it still outputs the new MST. But if the removed edge was a cut edge, the graph is split into two disconnected parts. So the algorithm will exhausts all valid edges and returns a single list of edges containing the edges of both trees together (a minimum spanning forest).
 
-- With Prim algorithm, ###
+- With Prim algorithm, the failed node and its connected edges are removed, then the tree grows from an available node. If the graph becomes disconnected, Prim runs on each remaining component to return a single flat list of edges forming a Minimum Spanning Forest.
 
 - With Reverse Delete algorithm, it still gives the minimum spanning tree of this new network. 
 If enough edges are deleted to the point the graph is no more connected, it still gives the "minimum spanning forest", which mean it gives the minimum spanning trees inside this non connected graph.
